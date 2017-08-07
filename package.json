@@ -1,0 +1,24 @@
+{
+  "name": "es-cli",
+  "version": "0.1.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yedaodao/es-cli.git"
+  },
+  "author": "yedaodao",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.21.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "commander": "^2.11.0",
+    "del": "^3.0.0",
+    "graceful-fs": "^4.1.11",
+    "lodash": "^4.17.4",
+    "mkdirp": "^0.5.1",
+    "shelljs": "^0.7.8",
+    "url-join": "^2.0.2"
+  }
+}
