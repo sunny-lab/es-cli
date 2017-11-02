@@ -1,28 +1,19 @@
-const templateUrlMap = {
-    'koa-react-spa': 'sunny-lab/es-cli-template-koa-react-spa'
-};
+const should = require('should');
 
-function getTemplateUrlMap() {
-    return templateUrlMap;
-}
+const Env = require('../support/Env');
+const util = require('../../lib/util/util');
 
-function getTemplatesList() {
-    return Object.keys(templateUrlMap);
-}
-
-function getLicenseList() {
-    return [
-        'private',
-        'MIT',
-        'ISC',
-        'Apache-2.0',
-        'GPL-2.0',
-        'GPL-3.0',
-    ]
-}
-
-exports.getTemplatesList = getTemplatesList;
-exports.getLicenseList = getLicenseList;
-exports.getTemplateUrlMap = getTemplateUrlMap;
+describe('util/util', function () {
+    describe('#getTemplatesList()', function () {
+        it('should return correct result', function () {
+            should.equal(util.getTemplatesList().length, 1);
+        });
+    });
+    describe('#getLicenseList()', function () {
+        it('should return correct result', function () {
+            should.equal(Array.isArray(util.getLicenseList()), true);
+        });
+    });
+});
 
 
