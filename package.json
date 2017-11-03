@@ -10,7 +10,7 @@
     "es-cli": "bin/es-cli"
   },
   "scripts": {
-    "test": "mocha ./test/**/*.test.js"
+    "test": "mocha ./test/*.test.js ./test/**/*.test.js"
   },
   "author": "yedaodao",
   "license": "MIT",
