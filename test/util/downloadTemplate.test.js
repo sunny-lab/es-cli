@@ -19,6 +19,16 @@ describe('util/downloadTemplate', function () {
                     return downloadTemplate(templateName).should.eventually.equal(templateDir);
                 });
         });
+        it('should throw error', function () {
+            this.timeout(20000);
+            const templateName = 'koa-react-spa_not_exist';
+            const templateDir = PathUtil.getTemplatePath(templateName);
+            del.sync([templateDir], {force: true});
+            return downloadTemplate(templateName)
+                .catch(function (err) {
+                    err.message.should.be.equal('Invalid template name');
+                });
+        });
     });
 });
 
