@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ context.basic.name }}</title>
+</head>
+<body>
+    author: {{ context.basic.author }}
+    private: {{ context.npm.private }}
+    license: {{ context.npm.license }}
+    git: {{ context.git.gitRepo }}
+    email: {{ meta.email }}
+    name: {{ meta.name }}
+</body>
+</html>
