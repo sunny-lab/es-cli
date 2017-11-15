@@ -1,3 +1,3 @@
 module.exports = {
-    name: 'test'
+    name: 'es-cli-test-meta'
 };
