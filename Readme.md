@@ -36,19 +36,19 @@ Then select the project template and answer some questions.
     {
         "context": {
             "basic": {
-                "name": "projectName"
+                "name": "projectName",
                 "author": "author"
             },
             "npm": {
-                "private": true
+                "private": true,
                 "lisence": "private"
             },
             "git": {
-                "hasRepo": false
+                "hasRepo": false,
                 "gitRepo": "https://example.com/"
             },
             "template": {
-                name: "select template name"
+                "name": "select template name"
             }
         }
     }
