@@ -24,6 +24,12 @@ es-cli create
 
 Then select the project template and answer some questions.
 
+## Support Template
+
+1. [es-cli-template-koa-react-spa](https://github.com/sunny-lab/es-cli-template-koa-react-spa): A template for koa+react project
+2. [es-cli-template-koa](https://github.com/sunny-lab/es-cli-template-koa): A template for koa project
+3. [es-cli-template-nodecloud](https://github.com/sunny-lab/es-cli-template-nodecloud): A template for Yan Rong Tech Inc. nodecloud project
+
 
 ## Template Specification
 
